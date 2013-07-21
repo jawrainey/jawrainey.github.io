@@ -1,0 +1,2 @@
+include: [.htaccess]
+permalink: /blog/:title
