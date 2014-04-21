@@ -230,35 +230,6 @@ pre, code {
 
 code { font-size: .809em; }
 
-pre .comment { color: #586E75; }
-
-pre .constant.language,
-pre .storage {
-    color: #268BD2;
-}
-
-pre .constant.regexp,
-pre .string, pre .comment.docstring,
-pre .support.tag.script, pre .support.tag.style,
-pre .string.regexp,
-pre .string.regexp.open, pre .string.regexp.close {
-    color: #2AA198; /* cyan */
-}
-
-pre .inherited-class { font-style: italic; }
-pre .entity { color: #B58900; }
-
-pre .keyword, pre .selector,
-pre .support, *[data-language="c"] .function.call {
-    color: #859900;
-}
-
-pre .constant,
-pre .support.method,
-pre .support.property,
-pre .variable.global, pre .variable.class, pre .variable.instance {
-    color: #839496;
-}
 
 /*-------------------- $MEDIA QUERIES ------------------*/
 
