@@ -5,18 +5,18 @@
 * | |_| |  _  | | \ \  
 * \_____/ |_| |_|  \_\ 
 *
-*  @title:    rainbow
+*  @title:   rainbow
 *  @author:  @jawrainey
-*  @version: 0.2
+*  @version: 0.3
 */
 
 /*-------------------- $RESET -------------------*/
 
 * { margin: 0; padding: 0; }
 
-ol, ul { list-style: none; }
+ul { list-style: none; }
 
-li { list-style-type: square; }
+ul li { list-style-type: square; }
 
 article, aside, details, footer, header, menu,
 nav, section, label, input, pre, time  {
@@ -44,7 +44,7 @@ html {
     -ms-text-size-adjust: 100%;
     text-size-adjust: 100%;
     font-size: 100%;
-    background: whiteSmoke;
+    background: white;
     overflow-y: scroll;
     color: #222;
 }
@@ -110,8 +110,9 @@ h2, h3 {
 
 /*-------------------- $SPACING --------------------*/
 
-p, pre, blockquote, img { margin-bottom: 1.618em; }
-ul { margin: 0 0 1.618em 2.427em; }
+p, pre, footer { margin-bottom: 1.618em; }
+p { margin-bottom: .809em; }
+ol, ul { margin: 0 0 1.618em 2.427em; }
 
 /*-------------------- $LINKS & $COLOURS --------------------*/
 
@@ -170,15 +171,13 @@ nav a, header[role="banner"] a { color: #222; }
 
 /*-------------------- $EXTRAS --------------*/
 
-ol, ul {
-    margin: 0 1.618em;
-}
-
 blockquote {
-    margin: 0 1.618em;
+    margin: 0 1.618em 1.618em 1.618em;
     border-left: .33em solid #999;
     padding-left: .809em;
     text-indent: -0.4em;
+    font-style: italic;
+    font-size: .809em;
 }
 
 hr {
@@ -215,21 +214,25 @@ nav li {
     padding-left: .809em;
 }
 
-/*-------------------- $RAINBOWJS -------------------*/
 
-pre {
+/*-------------------- $CODE -------------------*/
+
+pre, .post p code {
     word-wrap: break-word;
-    border: 1px solid #C1C1C1;
+    border: 1px solid #E5E5E5;
+    padding: .809em;
 }
 
 pre, code {
     color: #333;
-    background-color: white;
+    background-color: #F5F2F0;
     font: 1em courier, monospace;
+    border-radius: 3px;
 }
 
 code { font-size: .809em; }
 
+.post p code { padding: 3px; }
 
 /*-------------------- $MEDIA QUERIES ------------------*/
 
@@ -240,3 +243,4 @@ code { font-size: .809em; }
 @media only screen and (min-width: 700px) {
     body { font-size: 1.1em;}
 }
+
