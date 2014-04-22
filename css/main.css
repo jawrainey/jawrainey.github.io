@@ -110,8 +110,8 @@ h2, h3 {
 
 /*-------------------- $SPACING --------------------*/
 
-p, pre, footer { margin-bottom: 1.618em; }
-p { margin-bottom: .809em; }
+pre { margin-bottom: 1.618em; }
+p, footer { margin-bottom: .809em; }
 ol, ul { margin: 0 0 1.618em 2.427em; }
 
 /*-------------------- $LINKS & $COLOURS --------------------*/
@@ -205,15 +205,24 @@ header[role="banner"] { margin-bottom: .809em; }
 
 header[role="banner"] div { color: #333; }
 
-nav { float: right; }
+nav, .meta { float: right; }
 
 nav ul { margin: 0; }
 
-nav li {
+nav li, .meta li {
     display: inline;
     padding-left: .809em;
 }
 
+/*-------------------- $FOOTER -------------------*/
+
+footer {
+  padding: .404em 0;
+  border-top: 1px solid #E8E8E8;
+}
+
+.meta li a { color: #333; }
+.meta li a:hover { color: #049CDB; }
 
 /*-------------------- $CODE -------------------*/
 
