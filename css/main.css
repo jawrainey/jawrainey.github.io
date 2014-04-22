@@ -1,10 +1,4 @@
-/*     _       _ _ _   
-*     | |     |  _  \  
-*     | |     | |_| |  
-*  _  | |     |  _  /  
-* | |_| |  _  | | \ \  
-* \_____/ |_| |_|  \_\ 
-*
+/*
 *  @title:   rainbow
 *  @author:  @jawrainey
 *  @version: 0.3
@@ -20,92 +14,92 @@ ul li { list-style-type: square; }
 
 article, aside, details, footer, header, menu,
 nav, section, label, input, pre, time  {
-    display: block;
+  display: block;
 }
 
 /*-------------------- $SELECTIONS---------------*/
 
 ::-moz-selection {
-    background: #DDD;
-    color: #000;
-    text-shadow: none;
+  background: #DDD;
+  color: #000;
+  text-shadow: none;
 }
 
 ::selection {
-    background: #DDD;
-    color: #000;
-    text-shadow: none;
+  background: #DDD;
+  color: #000;
+  text-shadow: none;
 }
 
 /*-------------------- $ROOT --------------------*/
 
 html {
-    -webkit-text-size-adjust: 100%;
-    -ms-text-size-adjust: 100%;
-    text-size-adjust: 100%;
-    font-size: 100%;
-    background: white;
-    overflow-y: scroll;
-    color: #222;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  font-size: 100%;
+  background: white;
+  overflow-y: scroll;
+  color: #222;
 }
 
 body {
-    font: 1em/1.618 "pt-serif", serif;
-    font-style: normal;
-    font-weight: 400;
-    -webkit-font-smoothing: antialiased;
-    font-smoothing: antialiased;
+  font: 1em/1.618 "pt-serif", serif;
+  font-style: normal;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
 }
 
 .wrapper {
-    margin: 0 auto;
-    max-width: 32em;
-    padding: 1.618em 1.618em 0 1.618em;
+  margin: 0 auto;
+  max-width: 32em;
+  padding: 1.618em 1.618em 0 1.618em;
 }
 
 /*-------------------- $TYPOGRAPHY --------------*/
 
 h1,h2,h3, .datetime,
 nav, header[role="banner"] div  {
-    font-family: "pt-sans", Georgia, sans-serif;
+  font-family: "pt-sans", Georgia, sans-serif;
 }
 
 p {
-    text-align: justify;
-    text-justify: newspaper;
-    -webkit-hyphens: auto;
-    -webkit-hyphenate-character: "\2010";
-    -webkit-hyphenate-limit-after: 1;
-    -webkit-hyphenate-limit-before: 3;
-    -moz-hyphens: auto;
-    hyphens: auto;
+  text-align: justify;
+  text-justify: newspaper;
+  -webkit-hyphens: auto;
+  -webkit-hyphenate-character: "\2010";
+  -webkit-hyphenate-limit-after: 1;
+  -webkit-hyphenate-limit-before: 3;
+  -moz-hyphens: auto;
+  hyphens: auto;
 }
 
 em, i {
-    font-weight: 400;
-    font-style: italic;
+  font-weight: 400;
+  font-style: italic;
 }
 
 b, strong, h1, h2, h3, header[role="banner"] { font-weight: 700; }
 
 h1 {
-    font-size: 1.618em;
-    margin-bottom: .6067em;
+  font-size: 1.618em;
+  margin-bottom: .6067em;
 }
 
 h2, h3 {
-    font-size: 1.125em;
-    margin-bottom: .809em;
-    line-height: 1.3333;
+  font-size: 1.125em;
+  margin-bottom: .809em;
+  line-height: 1.3333;
 }
 
 /*-------------------- $STRUCTURE --------------------*/
 
 .archived h2 {  display: inline-block; }
 .datetime {
-    float: right;
-    line-height: 1;
-    margin: 0;
+  float: right;
+  line-height: 1;
+  margin: 0;
 }
 
 /*-------------------- $SPACING --------------------*/
@@ -117,9 +111,9 @@ ol, ul { margin: 0 0 1.618em 2.427em; }
 /*-------------------- $LINKS & $COLOURS --------------------*/
 
 a {
-    color: #049CDB;
-    text-decoration: none;
-    outline: none;
+  color: #049CDB;
+  text-decoration: none;
+  outline: none;
 }
 
 a:hover { text-decoration: underline; }
@@ -127,10 +121,10 @@ a:hover { text-decoration: underline; }
 nav a, header[role="banner"] a { color: #222; }
 
 .byline {
-    margin-top: -.4045em;
-    margin-bottom: .809em;
-    font-size: .809em;
-    font-style: italic;
+  margin-top: -.4045em;
+  margin-bottom: .809em;
+  font-size: .809em;
+  font-style: italic;
 }
 
 /*-------------------- $ARCHIVES --------------*/
@@ -172,33 +166,33 @@ nav a, header[role="banner"] a { color: #222; }
 /*-------------------- $EXTRAS --------------*/
 
 blockquote {
-    margin: 0 1.618em 1.618em 1.618em;
-    border-left: .33em solid #999;
-    padding-left: .809em;
-    text-indent: -0.4em;
-    font-style: italic;
-    font-size: .809em;
+  margin: 0 1.618em 1.618em 1.618em;
+  border-left: .33em solid #999;
+  padding-left: .809em;
+  text-indent: -0.4em;
+  font-style: italic;
+  font-size: .809em;
 }
 
 hr {
-    border: none;
-    border-top: 1px solid #999;
-    margin-bottom: 1.6em;
+  border: none;
+  border-top: 1px solid #999;
+  margin-bottom: 1.6em;
 }
 
 /*-------------------- $IMAGES ------------------*/
 
 img {
-    width: 100%;
-    max-width: 100%;
-    -ms-interpolation-mode: bicubic;
+  width: 100%;
+  max-width: 100%;
+  -ms-interpolation-mode: bicubic;
 }
 
 /*-------------------- $HEADER, $LOGO & $NAV -------------------*/
 
 nav[role="navigation"] li,
 header[role="banner"] div {
-    display: inline-block;
+  display: inline-block;
 }
 
 header[role="banner"] { margin-bottom: .809em; }
@@ -210,8 +204,8 @@ nav, .meta { float: right; }
 nav ul { margin: 0; }
 
 nav li, .meta li {
-    display: inline;
-    padding-left: .809em;
+  display: inline;
+  padding-left: .809em;
 }
 
 /*-------------------- $FOOTER -------------------*/
@@ -227,16 +221,16 @@ footer {
 /*-------------------- $CODE -------------------*/
 
 pre, .post p code {
-    word-wrap: break-word;
-    border: 1px solid #E5E5E5;
-    padding: .809em;
+  word-wrap: break-word;
+  border: 1px solid #E5E5E5;
+  padding: .809em;
 }
 
 pre, code {
-    color: #333;
-    background-color: #F5F2F0;
-    font: 1em courier, monospace;
-    border-radius: 3px;
+  color: #333;
+  background-color: #F5F2F0;
+  font: 1em courier, monospace;
+  border-radius: 3px;
 }
 
 code { font-size: .809em; }
@@ -246,10 +240,10 @@ code { font-size: .809em; }
 /*-------------------- $MEDIA QUERIES ------------------*/
 
 @media only screen and (max-width: 30em) {
-    .datetime {display: none;}
+  .datetime {display: none;}
 }
 
 @media only screen and (min-width: 700px) {
-    body { font-size: 1.1em;}
+  body { font-size: 1.1em;}
 }
 
