@@ -63,13 +63,13 @@ img {
 .border { border-top: thin solid #f3f3f3; }
 
 p:first-of-type {
-  padding: 1em 0;
+  padding-top: 1em;
   text-indent: 1.6em;
 }
 
 .meta {
   text-align: center;
-  padding-top: 1em;
+  padding: 1em 0 0 0;
   margin: 0 1.618em;
 }
 
