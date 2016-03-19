@@ -1,116 +1,50 @@
-/*
-*  @title:   rainbow
-*  @author:  @jawrainey
-*  @version: 0.3
-*/
-
-/*-------------------- $RESET -------------------*/
-
-* { margin: 0; padding: 0; }
-
-ul { list-style: none; }
-
-ul li { list-style-type: square; }
-
-article, aside, details, footer, header, menu,
-nav, section, label, input, pre, time  {
-  display: block;
-}
-
-/*-------------------- $SELECTIONS---------------*/
-
 ::-moz-selection {
-  background: #DDD;
-  color: #000;
+  background: #049CDB;
+  color: #FFF;
   text-shadow: none;
 }
 
 ::selection {
-  background: #DDD;
-  color: #000;
+  background: #049CDB;
+  color: #FFF;
   text-shadow: none;
 }
 
-/*-------------------- $ROOT --------------------*/
-
-html {
-  -webkit-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%;
-  text-size-adjust: 100%;
-  font-size: 100%;
+html, .meta li a {
   background: white;
-  overflow-y: scroll;
-  color: #222;
+  color: #333;
 }
 
 body {
-  font: 1em/1.618 "pt-serif", serif;
-  font-style: normal;
-  font-weight: 400;
+  font: 1em/1.618 "PT sans", serif;
   -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: antialiased;
   font-smoothing: antialiased;
 }
 
 .wrapper {
-  margin: 0 auto;
   max-width: 32em;
-  padding: 1.618em 1.618em 0 1.618em;
-}
-
-/*-------------------- $TYPOGRAPHY --------------*/
-
-h1,h2,h3, .datetime,
-nav, header[role="banner"] div  {
-  font-family: "pt-sans", Georgia, sans-serif;
+  padding: 1.618em;
+  margin: 0 auto;
 }
 
 p {
+  font-family: "Pt Serif", Georgia, sans-serif;
   text-align: justify;
   text-justify: newspaper;
-  -webkit-hyphens: auto;
-  -webkit-hyphenate-character: "\2010";
-  -webkit-hyphenate-limit-after: 1;
-  -webkit-hyphenate-limit-before: 3;
-  -moz-hyphens: auto;
-  hyphens: auto;
 }
-
-em, i {
-  font-weight: 400;
-  font-style: italic;
-}
-
-b, strong, h1, h2, h3, header[role="banner"] { font-weight: 700; }
 
 h1 {
-  font-size: 1.618em;
-  margin-bottom: .6067em;
+  font-size: 2.0225em;
+  margin-bottom: .3033em;
 }
 
-h2, h3 {
-  font-size: 1.125em;
-  margin-bottom: .809em;
-  line-height: 1.3333;
+h1 {
+  text-align: center;
+  font-weight: 700;
 }
 
-/*-------------------- $STRUCTURE --------------------*/
-
-.archived h2 {  display: inline-block; }
-.datetime {
-  float: right;
-  line-height: 1;
-  margin: 0;
-}
-
-/*-------------------- $SPACING --------------------*/
-
-pre { margin-bottom: 1.618em; }
-p, footer { margin-bottom: .809em; }
-ol, ul { margin: 0 0 1.618em 2.427em; }
-
-/*-------------------- $LINKS & $COLOURS --------------------*/
-
-a {
+a, .meta li a:hover {
   color: #049CDB;
   text-decoration: none;
   outline: none;
@@ -118,133 +52,28 @@ a {
 
 a:hover { text-decoration: underline; }
 
-nav a, header[role="banner"] a { color: #222; }
-
-.byline {
-  margin-top: -.4045em;
-  margin-bottom: .809em;
-  font-size: .809em;
-  font-style: italic;
-}
-
-/*-------------------- $ARCHIVES --------------*/
-
-.archived h2 { padding-left: .4045em; font-weight: 400; }
-
-.red a, .post.red h1 { color: #9D261D;  }
-.red blockquote { border-color: #9D261D; }
-.red.archived h2 { border-left: 0.188em solid #9D261D; }
-
-.yellow a, .post.yellow h1 { color: #FFC40D; }
-.yellow blockquote { border-color: #FFC40D; }
-.yellow.archived h2 { border-left: 0.188em solid #FFC40D; }
-
-.pink a, .post.pink h1 { color: #DE6fA1; }
-.pink blockquote { border-color: #DE6fA1; }
-.pink.archived h2 { border-left: 0.188em solid #DE6fA1; }
-
-.green a, .post.green h1 { color: #009484; }
-.green blockquote { border-color: #009484; }
-.green.archived h2 { border-left: 0.188em solid #009484; }
-
-.purple a, .post.purple h1 { color: #7A43b6; }
-.purple blockquote { border-color: #7A43b6; }
-.purple.archived h2 { border-left: 0.188em solid #7A43b6; }
-
-.orange a, .post.orange h1 { color: #EF7901; }
-.orange blockquote { border-color: #EF7901; }
-.orange.archived h2 { border-left: 0.188em solid #EF7901; }
-
-.blue a, .post.blue h1 { color: #049CDB; }
-.blue blockquote { border-color: #049CDB; }
-.blue.archived h2 { border-left: 0.188em solid #049CDB; }
-
-.gray a, .post.gray h1 { color: #999; }
-.gray blockquote { border-color: #999; }
-.gray.archived h2 { border-left: 0.188em solid #999; }
-
-/*-------------------- $EXTRAS --------------*/
-
-blockquote {
-  margin: 0 1.618em 1.618em 1.618em;
-  border-left: .33em solid #999;
-  padding-left: .809em;
-  text-indent: -0.4em;
-  font-style: italic;
-  font-size: .809em;
-}
-
-hr {
-  border: none;
-  border-top: 1px solid #999;
-  margin-bottom: 1.6em;
-}
-
-/*-------------------- $IMAGES ------------------*/
-
 img {
-  width: 100%;
-  max-width: 100%;
-  -ms-interpolation-mode: bicubic;
+  display: block;
+  width: 120px;
+  border-radius: 50%;
+  margin: 0 auto;
+  margin-bottom: 1em;
 }
 
-/*-------------------- $HEADER, $LOGO & $NAV -------------------*/
+.border { border-top: thin solid #f3f3f3; }
 
-nav[role="navigation"] li,
-header[role="banner"] div {
-  display: inline-block;
+p:first-of-type {
+  padding: 1em 0;
+  text-indent: 1.6em;
 }
 
-header[role="banner"] { margin-bottom: .809em; }
+.meta {
+  text-align: center;
+  padding-top: 1em;
+  margin: 0 1.618em;
+}
 
-header[role="banner"] div { color: #333; }
-
-nav, .meta { float: right; }
-
-nav ul { margin: 0; }
-
-nav li, .meta li {
+.meta li {
   display: inline;
   padding-left: .809em;
 }
-
-/*-------------------- $FOOTER -------------------*/
-
-footer {
-  padding: .404em 0;
-  border-top: 1px solid #E8E8E8;
-}
-
-.meta li a { color: #333; }
-.meta li a:hover { color: #049CDB; }
-
-/*-------------------- $CODE -------------------*/
-
-pre, .post p code {
-  word-wrap: break-word;
-  border: 1px solid #E5E5E5;
-  padding: .809em;
-}
-
-pre, code {
-  color: #333;
-  background-color: #F5F2F0;
-  font: 1em courier, monospace;
-  border-radius: 3px;
-}
-
-code { font-size: .809em; }
-
-.post p code { padding: 3px; }
-
-/*-------------------- $MEDIA QUERIES ------------------*/
-
-@media only screen and (max-width: 30em) {
-  .datetime {display: none;}
-  .twitter { font-size: .809em;}
-}
-
-@media only screen and (min-width: 700px) {
-  body { font-size: 1.1em;}
-}
-
