@@ -10,13 +10,16 @@
   text-shadow: none;
 }
 
-html, .meta li a {
+html {
+  border-top: 4px solid #232e35;
+}
+html, li a {
   background: white;
   color: #333;
 }
 
 body {
-  font: 1em/1.618 "PT sans", serif;
+  font: .6em/1.618 "PT sans", serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: antialiased;
   font-smoothing: antialiased;
@@ -32,19 +35,11 @@ p {
   font-family: "Pt Serif", Georgia, sans-serif;
   text-align: justify;
   text-justify: newspaper;
+  font-size: 110%;
+  line-height: 1.75;
 }
 
-h1 {
-  font-size: 2.0225em;
-  margin-bottom: .3033em;
-}
-
-h1 {
-  text-align: center;
-  font-weight: 700;
-}
-
-a, .meta li a:hover {
+a {
   color: #049CDB;
   text-decoration: none;
   outline: none;
@@ -52,28 +47,41 @@ a, .meta li a:hover {
 
 a:hover { text-decoration: underline; }
 
-img {
+#me {
   display: block;
-  width: 120px;
+  width: 60px;
   border-radius: 50%;
   margin: 0 auto;
-  margin-bottom: 1em;
+  padding: .809em 0;
 }
 
-.border { border-top: thin solid #f3f3f3; }
-
-p:first-of-type {
-  padding-top: 1em;
-  text-indent: 1.6em;
-}
-
-.meta {
+#tagline {
+  padding-top: .809em;
   text-align: center;
-  padding: 1em 0 0 0;
-  margin: 0 1.618em;
 }
 
-.meta li {
-  display: inline;
-  padding-left: .809em;
+.border, #tagline { border-top: thin solid #f3f3f3; }
+
+p:first-of-type { text-indent: 1.6em; }
+
+nav {
+  border-top: thin solid #999;
+  border-bottom: thin solid #999;
+  margin-bottom: 1.618em;
+  font-weight: 700;
+}
+
+nav li {
+  width: 24%;
+  display: inline-block;
+}
+
+nav ul {
+  text-align: center;
+  padding-left: 0;
+}
+
+@media (min-width:641px) {
+  body { font-size: 1em; }
+  #me { width: 120px; }
 }
