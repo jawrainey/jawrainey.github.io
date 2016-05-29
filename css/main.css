@@ -1,3 +1,21 @@
+@font-face {
+  font-family: 'PTSerif';
+  src: url('../fonts/PTF55F-webfont.eot');
+  src: url('../fonts/PTF55F-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/PTF55F-webfont.woff') format('woff'),
+       url('../fonts/PTF55F-webfont.ttf') format('truetype'),
+       url('../fonts/PTF55F-webfont.svg#PTSerif') format('svg');
+}
+
+@font-face {
+  font-family: 'PTSans';
+  src: url('../fonts/PTS55F-webfont.eot');
+  src: url('../fonts/PTS55F-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/PTS55F-webfont.woff') format('woff'),
+       url('../fonts/PTS55F-webfont.ttf') format('truetype'),
+       url('../fonts/PTS55F-webfont.svg#PTSans') format('svg');
+}
+
 ::-moz-selection {
   background: #049CDB;
   color: #FFF;
@@ -10,16 +28,15 @@
   text-shadow: none;
 }
 
-html {
-  border-top: 4px solid #232e35;
-}
+html { border-top: 4px solid #232E35; }
+
 html, li a {
   background: white;
   color: #333;
 }
 
 body {
-  font: .6em/1.618 "PT sans", serif;
+  font: .6em/1.618 "PTSerif", Georgia, serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: antialiased;
   font-smoothing: antialiased;
@@ -32,7 +49,6 @@ body {
 }
 
 p {
-  font-family: "Pt Serif", Georgia, sans-serif;
   text-align: justify;
   text-justify: newspaper;
   font-size: 110%;
@@ -55,6 +71,11 @@ a:hover { text-decoration: underline; }
   padding: .809em 0;
 }
 
+#tagline, nav li {
+  font-family: "PTSans", sans-serif;
+  font-weight: 700;
+}
+
 #tagline {
   padding-top: .809em;
   text-align: center;
@@ -68,7 +89,6 @@ nav {
   border-top: thin solid #999;
   border-bottom: thin solid #999;
   margin-bottom: 1.618em;
-  font-weight: 700;
 }
 
 nav li {
