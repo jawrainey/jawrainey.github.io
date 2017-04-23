@@ -124,8 +124,8 @@
         <li><a href="https://twitter.com/jawrainey">Twitter</a></li>
       </ul>
     </nav>
-    <img id="me" src="/img/me.jpg"
-    alt="Jay Rainey - designing and developing for simplicity.">
+    <img id="me" src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
+    data-src="/img/me.jpg" alt="Jay Rainey - designing and developing for simplicity.">
     <p>I'm Jay Rainey, doctoral researcher <em>&amp;</em> software engineer at
     <a href="https://openlab.ncl.ac.uk/people/b5060990/">Open Lab</a> with experience
     developing scientific software and public health technologies.
@@ -136,6 +136,7 @@
   </div>
   <script>
   !function(a,b,c,d,e,f,g){a.GoogleAnalyticsObject=e,a[e]=a[e]||function(){(a[e].q=a[e].q||[]).push(arguments)},a[e].l=1*new Date,f=b.createElement(c),g=b.getElementsByTagName(c)[0],f.async=1,f.src=d,g.parentNode.insertBefore(f,g)}(window,document,"script","https://www.google-analytics.com/analytics.js","ga"),ga("create","UA-31608066-1","auto"),ga("send","pageview");
+  window.onload=function(a){document.getElementById("me").setAttribute("src",document.getElementById("me").getAttribute("data-src"))};
   </script>
 </body>
 </html>
