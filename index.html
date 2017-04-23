@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <title>Jay Rainey &mdash; jawrainey around the web.</title>
-  <meta name="description" content="Jay Rainey, @jawrainey">
+  <meta name="description" content="I am Jay Rainey (@jawrainey), a Researcher &amp; Software Engineer who builds mobile and web technologies for interacting with, consuming and collaboratively interpret speech datasets, such as interviews or podcasts.">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="preload" href="../fonts/PTSerif.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="../fonts/PTSans.woff2" as="font" type="font/woff2" crossorigin>
@@ -62,6 +62,10 @@
     line-height: 1.75;
   }
 
+  h1 { font-size: 175%; }
+
+  h2 { font-size: 125%; }
+
   a {
     color: #049CDB;
     text-decoration: none;
@@ -78,17 +82,15 @@
     padding: .809em 0;
   }
 
-  #tagline, nav li {
+  nav li {
     font-family: "PTSans", sans-serif;
     font-weight: 700;
   }
 
   #tagline {
-    padding-top: .809em;
-    text-align: center;
+    padding-bottom: .809em;
+    border-bottom: thin solid #F3F3F3;
   }
-
-  .border, #tagline { border-top: thin solid #f3f3f3; }
 
   p:first-of-type { text-indent: 1.6em; }
 
@@ -103,10 +105,9 @@
     display: inline-block;
   }
 
-  nav ul {
-    text-align: center;
-    padding-left: 0;
-  }
+  nav ul { padding-left: 0; }
+
+  h1, h2, nav ul, #tagline { text-align: center; }
 
   @media (min-width:641px) {
     body { font-size: 1em; }
@@ -124,15 +125,10 @@
         <li><a href="https://twitter.com/jawrainey">Twitter</a></li>
       </ul>
     </nav>
-    <img id="me" src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
-    data-src="/img/me.jpg" alt="Jay Rainey - designing and developing for simplicity.">
-    <p>I'm Jay Rainey, doctoral researcher <em>&amp;</em> software engineer at
-    <a href="https://openlab.ncl.ac.uk/people/b5060990/">Open Lab</a> with experience
-    developing scientific software and public health technologies.
-    My research examines new ways to interact with, consume, and collaboratively interpret
-    speech datasets (such as interviews or podcasts) through the design,
-    development, and evaluation of interactive web technologies.</p>
-    <h3 id="tagline"><em><a href="mailto:hi@jawrainey.me">Fancy a chat?</a></em></h3>
+    <h1>Jay Rainey</h1>
+    <img id="me" src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="/img/jay-rainey-headshot.jpg" alt="A headshot photography of Jay Rainey &mdash; Researcher &amp; Software Engineer" title="Jay Rainey &mdash; Doctoral Researcher &amp; Software Engineer at Open Lab">
+    <h2 id="tagline"><em>Doctoral Researcher &amp; Software Engineer at <a href="https://openlab.ncl.ac.uk/people/b5060990/">Open Lab</a></em></h2>
+    <p>My research examines new ways to interact with, consume, and collaboratively interpret speech datasets (such as interviews or podcasts) through the design, development, and evaluation of interactive web technologies. I have previous experience developing scientific software and public health technologies.</p>
   </div>
   <script>
   !function(a,b,c,d,e,f,g){a.GoogleAnalyticsObject=e,a[e]=a[e]||function(){(a[e].q=a[e].q||[]).push(arguments)},a[e].l=1*new Date,f=b.createElement(c),g=b.getElementsByTagName(c)[0],f.async=1,f.src=d,g.parentNode.insertBefore(f,g)}(window,document,"script","https://www.google-analytics.com/analytics.js","ga"),ga("create","UA-31608066-1","auto"),ga("send","pageview");
