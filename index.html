@@ -1,137 +1,192 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title>Jay Rainey &mdash; jawrainey around the web.</title>
-  <meta name="description" content="I am Jay Rainey (@jawrainey), a Researcher &amp; Software Engineer who builds mobile and web technologies for interacting with, consuming and collaboratively interpret speech datasets, such as interviews or podcasts.">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="preload" href="../fonts/PTSerif.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="../fonts/PTSans.woff2" as="font" type="font/woff2" crossorigin>
-  <style>
-  @font-face {
-    font-family: 'PTSerif';
-    src: local('PT Serif'), local('PTSerif'),
-         url('../fonts/PTSerif.woff2') format('woff2'),
-         url('../fonts/PTSerif.woff') format('woff');
-  }
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>Jay Rainey &mdash; jawrainey around the web.</title>
+    <meta
+      name="description"
+      content="I am Jay Rainey (@jawrainey), a machine learning engineer at samsung research. I enjoy writing Python."
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="preload"
+      href="../fonts/PTSerif.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="../fonts/PTSans.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <style>
+      @font-face {
+        font-family: "PTSerif";
+        src: local("PT Serif"), local("PTSerif"),
+          url("../fonts/PTSerif.woff2") format("woff2"),
+          url("../fonts/PTSerif.woff") format("woff");
+      }
 
-  @font-face {
-    font-family: 'PTSans';
-    src: local('PT Sans'), local('PT Sans'),
-         url('../fonts/PTSans.woff2') format('woff2'),
-         url('../fonts/PTSans.woff') format('woff');
-  }
+      @font-face {
+        font-family: "PTSans";
+        src: local("PT Sans"), local("PT Sans"),
+          url("../fonts/PTSans.woff2") format("woff2"),
+          url("../fonts/PTSans.woff") format("woff");
+      }
 
-  ::-moz-selection {
-    background: #049CDB;
-    color: #FFF;
-    text-shadow: none;
-  }
+      ::-moz-selection {
+        background: #049cdb;
+        color: #fff;
+        text-shadow: none;
+      }
 
-  ::selection {
-    background: #049CDB;
-    color: #FFF;
-    text-shadow: none;
-  }
+      ::selection {
+        background: #049cdb;
+        color: #fff;
+        text-shadow: none;
+      }
 
-  html { border-top: 4px solid #232E35; }
+      html {
+        border-top: 4px solid #232e35;
+      }
 
-  html, li a {
-    background: white;
-    color: #333;
-  }
+      html,
+      li a {
+        background: white;
+        color: #333;
+      }
 
-  body {
-    font: .6em/1.618 "PTSerif", Georgia, serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: antialiased;
-    font-smoothing: antialiased;
-  }
+      body {
+        font: 0.6em/1.618 "PTSerif", Georgia, serif;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: antialiased;
+        font-smoothing: antialiased;
+      }
 
-  .wrapper {
-    max-width: 32em;
-    padding: 1.618em;
-    margin: 0 auto;
-  }
+      .wrapper {
+        max-width: 39em;
+        padding: 1.618em;
+        margin: 0 auto;
+      }
 
-  p {
-    text-align: justify;
-    text-justify: newspaper;
-    font-size: 110%;
-    line-height: 1.75;
-  }
+      p {
+        text-align: justify;
+        text-justify: newspaper;
+        font-size: 110%;
+        line-height: 1.75;
+      }
 
-  h1 { font-size: 175%; }
+      h1 {
+        font-size: 175%;
+      }
 
-  h2 { font-size: 125%; }
+      h2 {
+        font-size: 125%;
+      }
 
-  a {
-    color: #049CDB;
-    text-decoration: none;
-    outline: none;
-  }
+      a {
+        color: #049cdb;
+        text-decoration: none;
+        outline: none;
+      }
 
-  a:hover { text-decoration: underline; }
+      a:hover {
+        text-decoration: underline;
+      }
 
-  #me {
-    display: block;
-    width: 60px;
-    border-radius: 50%;
-    margin: 0 auto;
-    padding: .809em 0;
-  }
+      #me {
+        display: inline-flex;
+        width: 60px;
+        border-radius: 50%;
+        margin: 0 auto;
+        padding: 0.809em 0;
+      }
 
-  nav li {
-    font-family: "PTSans", sans-serif;
-    font-weight: 700;
-  }
+      nav li {
+        font-family: "PTSans", sans-serif;
+        font-weight: 700;
+      }
 
-  #tagline {
-    padding-bottom: .809em;
-    border-bottom: thin solid #F3F3F3;
-  }
+      #tagline {
+        padding-bottom: 0.809em;
+        border-bottom: thin solid #f3f3f3;
+      }
 
-  p:first-of-type { text-indent: 1.6em; }
+      p:first-of-type {
+        text-indent: 1.6em;
+      }
 
-  nav {
-    border-top: thin solid #999;
-    border-bottom: thin solid #999;
-    margin-bottom: 1.618em;
-  }
+      nav {
+        border-top: thin solid #999;
+        border-bottom: thin solid #999;
+        margin-bottom: 1.618em;
+      }
 
-  nav li {
-    width: 24%;
-    display: inline-block;
-  }
+      nav li {
+        width: 24%;
+        display: inline-block;
+      }
 
-  nav ul { padding-left: 0; }
+      nav ul {
+        padding-left: 0;
+      }
 
-  h1, h2, nav ul, #tagline { text-align: center; }
-
-  @media (min-width:641px) {
-    body { font-size: 1em; }
-    #me { width: 120px; }
-  }
-  </style>
-</head>
-<body>
-  <div class="wrapper">
-    <nav>
-      <ul>
-        <li><a href="mailto:hi@jawrainey.me?subject=Hello:">Contact</a></li>
-        <li><a href="https://github.com/jawrainey">Github</a></li>
-        <li><a href="https://uk.linkedin.com/in/jawrainey">LinkedIn</a></li>
-        <li><a href="https://twitter.com/jawrainey">Twitter</a></li>
-      </ul>
-    </nav>
-    <h1>Jay Rainey</h1>
-    <img id="me" src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="/img/jay-rainey-headshot.jpg" alt="A headshot photography of Jay Rainey &mdash; Researcher &amp; Software Engineer" title="Jay Rainey &mdash; Doctoral Researcher &amp; Software Engineer at Open Lab">
-    <h2 id="tagline"><em>Doctoral Researcher &amp; Software Engineer at <a href="https://openlab.ncl.ac.uk/people/b5060990/">Open Lab</a></em></h2>
-    <p>My research examines new ways to interact with, consume, and collaboratively interpret speech datasets (such as interviews or podcasts) through the design, development, and evaluation of interactive web technologies. I have previous experience developing scientific software and public health technologies.</p>
-  </div>
-  <script>
-    window.onload=function(a){document.getElementById("me").setAttribute("src",document.getElementById("me").getAttribute("data-src"))};
-  </script>
-</body>
+      h1,
+      h2,
+      nav ul,
+      #tagline {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <nav>
+        <ul>
+          <li><a href="mailto:hi@jawrainey.me?subject=Hello:">Contact</a></li>
+          <li><a href="https://github.com/jawrainey">Github</a></li>
+          <li><a href="https://uk.linkedin.com/in/jawrainey">LinkedIn</a></li>
+          <li><a href="https://twitter.com/jawrainey">Twitter</a></li>
+        </ul>
+      </nav>
+      <main class="flex-container">
+        <h1>Hi, I'm Jay</h1>
+        <img
+          id="me"
+          src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
+          data-src="/img/jay.jpg"
+          alt="A headshot photography of Jay Rainey &mdash; Machine Learning Engineer at Samsung Research"
+          title="Jay Rainey &mdash; Machine Learning Engineer at Samsung Research"
+        />
+        <h2 id="tagline">
+          <em>Machine Learning Engineer at Samsung Research</em>
+        </h2>
+        <p>
+          I build software at the intersection of software engineering and
+          machine learning at Samsung AI Center (SAIC), Cambridge. Previously a
+          postdoc on
+          <a href="https://github.com/ideafast">@ideafast</a> supporting the
+          selection and evaluation of multiple sensing devices in large-scale
+          studies through building
+          <a href="https://github.com/ideafast/middleware-services"
+            >data pipelines</a
+          >.
+        </p>
+      </main>
+    </div>
+    <script>
+      window.onload = function (a) {
+        document
+          .getElementById("me")
+          .setAttribute(
+            "src",
+            document.getElementById("me").getAttribute("data-src")
+          );
+      };
+    </script>
+  </body>
 </html>
